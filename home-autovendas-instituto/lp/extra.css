@@ -1,0 +1,26 @@
+/* Ajustes da versão estática (sem build) */
+.brand { display: inline-flex; align-items: center; }
+.brand img { display: block; mix-blend-mode: screen; /* o fundo preto do PNG da logo some sobre o azul-marinho */ }
+.brand--header img { height: 54px; width: auto; margin: -4px 0; }
+.brand--hero img { width: 210px; height: auto; margin: -18px 0 -10px -14px; }
+.brand--footer img { height: 120px; width: auto; margin: -16px 0; }
+.hero__pattern { color: rgba(197,204,216,.14); }
+
+.hero__photo { align-self: center; padding: 1.5rem 0; }
+.hero__photo img {
+  width: min(100%, 400px); aspect-ratio: 4 / 5; max-height: none;
+  object-fit: cover; object-position: 50% 12%;
+  border-radius: 18px; margin-left: auto;
+  border: 1px solid rgba(197,204,216,.45);
+  box-shadow: 0 24px 60px rgba(0,0,0,.45), 0 0 0 8px rgba(255,255,255,.04);
+}
+.hero__photo figcaption { right: -4px; bottom: 3rem; border-radius: 6px; }
+.doctor__photo { aspect-ratio: 1 / 1; object-position: 50% 22%; max-height: 520px; }
+.icon-slot { display: inline-flex; }
+[hidden] { display: none !important; }
+@media (max-width: 820px) {
+  .brand--hero img { width: 170px; }
+  .hero__photo img { margin-inline: auto; }
+  .hero__photo { padding-top: 1rem; }
+  .hero__photo figcaption { right: 1rem; bottom: 2.2rem; }
+}
