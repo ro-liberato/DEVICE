@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instituto Braga | Dr. Guilherme Braga – Urologista</title>
+  <meta name="description" content="Instituto Braga: cuidado especializado em saúde masculina com o Dr. Guilherme Braga, urologista, na Barra da Tijuca, Rio de Janeiro." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="extra.css" />
+</head>
+<body>
+  <!-- Padrão de losangos reutilizável (decorativo) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="diamonds" viewBox="0 0 600 400" fill="none" stroke="currentColor" stroke-width="1.2">
+        <path d="M300 20l140 180-140 180L160 200z" /><path d="M300 70l95 130-95 130-95-130z" />
+        <path d="M520 60l80 110-80 110-80-110z" /><path d="M80 120l70 90-70 90-70-90z" />
+        <path d="M120 350l50-60M480 340l60-70" />
+      </symbol>
+    </defs>
+  </svg>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#topo" class="brand brand--header" aria-label="Instituto Braga – início"><img src="images/logo.png" alt="Instituto Braga – Saúde Masculina" /></a>
+      <nav id="menu-principal" class="nav" aria-label="Principal">
+        <a href="#tratamentos">Tratamentos</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a class="btn btn--primary nav__cta" href="#agendamento"><i data-icon="calendar" data-size="18"></i><span>Agendar consulta</span></a>
+      </nav>
+      <button class="header__toggle" id="menu-toggle" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu"><i data-icon="menu" data-size="26"></i></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="topo">
+      <svg class="diamonds hero__pattern" aria-hidden="true"><use href="#diamonds" /></svg>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <a class="brand brand--hero hero__logo" href="#topo" aria-label="Instituto Braga"><img src="images/logo.png" alt="Instituto Braga – Saúde Masculina" /></a>
+          <h1>Cuidado especializado em saúde masculina</h1>
+          <p>Atendimento individualizado com o Dr. Guilherme Braga.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#agendamento"><span>Escolher horário</span><i data-icon="chevron" data-size="16"></i></a>
+            <a class="btn btn--ghost-light" data-wa target="_blank" rel="noopener noreferrer"><span>Fale com a equipe</span></a>
+          </div>
+          <p class="hero__meta"><i data-icon="pin" data-size="16"></i> Agendamento online • Atendimento no Rio de Janeiro</p>
+        </div>
+        <figure class="hero__photo">
+          <img src="images/dr-guilherme-braga.png" alt="Dr. Guilherme Braga, urologista" />
+          <figcaption><strong>Dr. Guilherme Braga</strong><span>Urologista</span><span>Instituto Braga</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- DESTAQUES -->
+    <section class="highlights" aria-label="Destaques"><ul class="container highlights__list" id="highlights"></ul></section>
+
+    <!-- TRATAMENTOS -->
+    <section class="section section--tint" id="tratamentos">
+      <div class="container">
+        <header class="section__head">
+          <h2>Tratamentos e cuidados</h2>
+          <p>Acompanhamento urológico com foco em saúde, bem-estar e qualidade de vida.</p>
+        </header>
+        <div class="grid-3" id="treatments"></div>
+      </div>
+    </section>
+
+    <section class="how" id="como-funciona" aria-labelledby="como-titulo">
+      <div class="container">
+        <h2 id="como-titulo" class="sr-only">Como funciona</h2>
+        <ol class="how__list" id="how"></ol>
+      </div>
+    </section>
+
+    <!-- SOBRE O MÉDICO -->
+    <section class="section doctor" id="medico">
+      <svg class="diamonds diamonds--light doctor__pattern" aria-hidden="true"><use href="#diamonds" /></svg>
+      <div class="container doctor__inner">
+        <img class="doctor__photo" src="images/dr-guilherme-braga.png" alt="Dr. Guilherme Braga em consultório" loading="lazy" />
+        <div class="doctor__text">
+          <span class="eyebrow">Sobre o médico</span>
+          <h2>Dr. Guilherme Braga</h2>
+          <p class="doctor__role">Urologista | Instituto Braga</p>
+          <p>Avaliação individualizada, escuta atenta e planejamento das opções de tratamento conforme a necessidade de cada paciente, com discrição e segurança.</p>
+          <a class="btn btn--primary" href="#agendamento"><i data-icon="calendar" data-size="18"></i><span>Agendar com o Dr. Guilherme</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- AGENDAMENTO (PROTÓTIPO) -->
+    <section class="section section--tint booking" id="agendamento">
+      <div class="container">
+        <header class="section__head">
+          <h2>Agende sua consulta</h2>
+          <p>Escolha a data, o horário e a modalidade de atendimento.</p>
+        </header>
+        <div class="booking__card card">
+          <ol class="steps" id="steps" aria-label="Etapas do agendamento"></ol>
+          <div id="booking-panel"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DÚVIDAS -->
+    <section class="section" id="duvidas">
+      <div class="container faq">
+        <header class="faq__head">
+          <h2>Dúvidas frequentes</h2>
+          <p class="faq__links">
+            <a class="link" data-policy="privacy">Política de privacidade</a>
+            <a class="link" data-policy="terms">Termos de uso</a>
+          </p>
+        </header>
+        <div class="faq__list" id="faq"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <svg class="diamonds footer__pattern" aria-hidden="true"><use href="#diamonds" /></svg>
+    <div class="container footer__inner">
+      <a class="brand brand--footer" href="#topo" aria-label="Instituto Braga"><img src="images/logo.png" alt="Instituto Braga – Saúde Masculina" /></a>
+      <div class="footer__cta">
+        <p>Sua saúde merece atenção especializada.</p>
+        <a class="btn btn--primary" href="#agendamento"><i data-icon="calendar" data-size="18"></i><span>Agendar consulta</span></a>
+      </div>
+      <address class="footer__loc">
+        <i data-icon="pin" data-size="20"></i>
+        <span>Barra da Tijuca, Rio de Janeiro – RJ<small>Atendimento particular • Agenda online</small></span>
+      </address>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante do WhatsApp -->
+  <a class="wa-float" data-wa target="_blank" rel="noopener noreferrer" aria-label="Fale com a equipe pelo WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.040 3C9.020 3 3.300 8.700 3.300 15.720c0 2.240.590 4.430 1.700 6.360L3.200 29l7.100-1.860a12.700 12.700 0 005.740 1.370h.01c7.010 0 12.730-5.710 12.730-12.730C28.780 8.700 23.060 3 16.040 3zm0 23.350h-.01a10.600 10.600 0 01-5.400-1.480l-.390-.230-4.210 1.100 1.120-4.100-.250-.420a10.570 10.570 0 01-1.620-5.610c0-5.840 4.760-10.600 10.620-10.600 2.830 0 5.490 1.100 7.490 3.110a10.540 10.540 0 013.100 7.500c0 5.850-4.770 10.730-10.450 10.730zm5.820-7.950c-.32-.16-1.890-.93-2.180-1.040-.29-.11-.5-.16-.71.160-.21.320-.82 1.040-1 1.250-.19.210-.37.240-.69.080-.32-.16-1.350-.5-2.570-1.590a9.600 9.600 0 01-1.780-2.210c-.19-.32-.02-.49.140-.65.140-.14.320-.37.480-.56.160-.19.210-.32.320-.53.110-.21.050-.4-.03-.56-.08-.16-.71-1.710-.98-2.340-.26-.62-.52-.53-.71-.54h-.61c-.21 0-.56.080-.85.400-.29.320-1.110 1.090-1.110 2.650s1.140 3.070 1.300 3.280c.16.210 2.240 3.420 5.430 4.800.76.330 1.350.520 1.810.670.760.240 1.450.210 2 .13.610-.09 1.890-.77 2.150-1.520.27-.75.270-1.390.19-1.520-.08-.13-.29-.21-.61-.37z"/></svg>
+    <span class="wa-float__text">Fale com a equipe</span>
+  </a>
+
+  <script src="config.js"></script>
+  <script src="demo-data.js"></script>
+  <script src="booking-service.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
